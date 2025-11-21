@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんスロットゲーム</title>
+  <!-- CSSファイルを読み込む -->
+  <link rel="stylesheet" href="style.css">
+</head>
+</html>
+
+<body>
+  <!-- ゲーム全体を囲む -->
+  <div class="geemu-zentai">
+    
+    <!-- タイトル -->
+    <h1 class="taitoru">じゃんけんスロット </h1>
+    
+    <!-- 相手の手を表示するエリア -->
+    <div class="aite-hyouji">
+      <h2 class="aite-taitoru">コンピューターの手</h2>
+      <div class="surotto-naraberu-hako">
+
+        <!-- 相手の1つ目のスロット -->
+        <div class="surotto-waku aite-surotto" id="aiteSurotto1">
+          <div class="emoji">✊
+          </div>
+        </div>
+        <!-- 相手の2つ目のスロット -->
+        <div class="surotto-waku aite-surotto" id="aiteSurotto2">
+          <div class="emoji">✌️</div>
+        </div>
+        <!-- 相手の3つ目のスロット -->
+        <div class="surotto-waku aite-surotto" id="aiteSurotto3">
+          <div class="emoji">✋</div>
+        </div>
+      </div>
+      <!-- 相手の合計点数 -->
+      <div class="goukei-tensu" id="aiteGoukei">
+        合計: <span class="tensu-kazu">?</span>点
+      </div>
+
+    </div>
+    
+
+
+    <!-- 結果を表示するエリア（相手と自分の間に配置） -->
+
+    <div class="kekka-hyouji-chuu" id="kekkaHyouji">
+      <!-- ここに結果が表示されます -->
+    </div>
+
+
+    
+    <!-- 自分の手のラベル -->
+    <h2 class="jibun-taitoru">ユーザーの手</h2>
+    
+
+
+    <!-- 3つのスロットを横に並べる箱 -->
+    <div class="surotto-naraberu-hako">
+      
+
+      <!-- 1つ目のスロット -->
+      <div class="surotto-waku jibun-surotto" id="surotto1">
+        <div class="emoji">✊</div>
+      </div>
+      
+      <!-- 2つ目のスロット -->
+      <div class="surotto-waku jibun-surotto" id="surotto2">
+        <div class="emoji">✌️</div>
+      </div>
+      
+      <!-- 3つ目のスロット -->
+      <div class="surotto-waku jibun-surotto" id="surotto3">
+        <div class="emoji">✋</div>
+      </div>
+      
+    </div>
+    
+
+
+    <!-- 自分の合計点数 -->
+    <div class="goukei-tensu" id="jibunGoukei">
+      合計: <span class="tensu-kazu">0</span>点
+    </div>
+    
+
+
+    <!-- STARTボタン -->
+    <button class="sutaato-botann" id="sutaatoBotann" onclick="sutaatoBotannWoOsu()">
+      START
+    </button>
+    
+
+
+    <!-- エラーメッセージを表示するエリア -->
+    <div class="eraa-messeeji" id="eraaMesseeji">
+      <!-- ここにエラーが表示されます -->
+    </div>
+    
+  </div>
+  
+
+
+  <!-- JavaScriptファイルを読み込む -->
+  <script src="/js/test.js"></script>
+</body>
+</html>
+
